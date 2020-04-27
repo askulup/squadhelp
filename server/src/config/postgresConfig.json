@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "a_kulik",
+    "password": "4862",
+    "database": "todo-dev",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": "Op"
+  },
+  "test": {
+    "username": "a_kulik",
+    "password": "4862",
+    "database": "todo-test",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": "Op"
+  },
+  "production": {
+    "username": "a_kulik",
+    "password": "4862",
+    "database": "todo-prod",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": "Op"
+  }
+}
