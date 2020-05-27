@@ -1,0 +1,78 @@
+@media screen and (min-width: 640px){
+.navToggle {
+  display: none;
+}
+}
+.navToggle {
+  height: 25px;
+  width: 25px;
+  overflow: hidden;
+  position: fixed;
+  left: 5%;
+  top: 3px;
+  text-indent: 100%;
+  white-space: nowrap;
+  z-index: 99999;
+  transition: all 0.3s; }
+.navToggle:hover {
+  box-shadow: 0 4px 11px rgba(255,255,255,.35);
+  border-radius: 50%;
+}
+.navToggle:before, .navToggle:after {
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition-property: transform; }
+.navToggle:before {
+  background-color: white;
+  transform: scale(1);
+  transition-duration: 0.3s; }
+.navToggle:after {
+  background-color: white;
+  transform: scale(0);
+  transition-duration: 0s; }
+.navToggle span {
+  background-color: slategrey;
+  bottom: auto;
+  display: inline-block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  right: auto;
+  top: 50%;
+  width: 18px;
+  z-index: 10;
+  transform: translateX(-50%) translateY(-50%); }
+.navToggle span:before, .navToggle span:after {
+  background-color: slategrey;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition: transform 0.3s; }
+.navToggle span:before {
+  transform: translateY(-6px) rotate(0deg); }
+.navToggle span:after {
+  transform: translateY(6px) rotate(0deg); }
+.navToggle.close-nav:before {
+  transform: scale(0); }
+.navToggle.close-nav:after {
+  transform: scale(1); }
+.navToggle.close-nav span {
+  background-color: rgba(255, 255, 255, 0); }
+.navToggle.close-nav span:before, .navToggle.close-nav span:after {
+  background-color: slategrey; }
+.navToggle.close-nav span:before {
+  transform: translateY(0) rotate(45deg); }
+.navToggle.close-nav span:after {
+  transform: translateY(0) rotate(-45deg); }

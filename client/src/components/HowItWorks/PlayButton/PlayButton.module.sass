@@ -1,0 +1,19 @@
+@import "src/assets/styles/base"
+
+.btnWrapper
+  @extend %btn-shared
+  background: $blue-color
+  width: 155px
+  border-radius: 6.1875rem
+  @media (max-width: $xxs)
+    width: 90%
+  &:hover
+    box-shadow: 0 .5rem .25rem rgba(55, 125, 255, .1)
+  a
+    @extend %btnLabel-shared
+    color: $white-color
+    small
+      padding-right: 10px
+      font-family: fontawesome, sans-serif
+
+

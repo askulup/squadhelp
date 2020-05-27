@@ -1,0 +1,56 @@
+@import 'src/assets/styles/color_variables'
+@import 'src/assets/styles/breakpoints'
+
+%section-shared
+  max-width: 1140px
+  margin: 0 auto
+  padding: 2rem 1rem
+
+%btn-shared
+  text-align: center
+  vertical-align: middle
+  user-select: none
+  cursor: pointer
+  padding: .75rem 1rem
+  transition: all 0.2s ease-in-out
+  border-radius: .3125rem
+  margin-bottom: .5rem
+  &:hover
+    transform: translateY(-3px)
+
+%btnLabel-shared
+  font-size: 1rem
+  font-weight: 500
+  text-decoration: none
+  line-height: 1.5rem
+
+%noSelected-shared
+  color: $blue-color
+  font-size: .6875rem
+  font-weight: 400
+  padding: 7px 15px
+  margin-bottom: 0.5rem
+  user-select: none
+  background: rgba(55,125,255,.1)
+  border: transparent
+  border-radius: 6.1875rem
+  width: fit-content
+
+%p-shared
+  color: rgb(119, 131, 143)
+  font-size: 1rem
+  font-weight: 400
+  text-align: justify
+
+%border-shared
+  border-radius: .3125rem
+  border: $border-gray
+
+@mixin blue-link
+  text-decoration: none
+  color: $blue-color
+
+%icon-fa
+  font-family: fontawesome, sans-serif
+  color: $blue-color
+  font-size: .8175rem

@@ -1,0 +1,36 @@
+@import 'src/assets/styles/base'
+@import 'src/assets/styles/breakpoints'
+@import 'src/assets/styles/color_variables'
+
+.sectionLaunching
+  @extend %section-shared
+  display: flex
+  text-align: left
+  justify-content: flex-end
+  padding-top: 4rem
+  @media (max-width: $sm)
+    flex-direction: column
+  .nav
+    width: 25%
+    height: fit-content
+    position: sticky
+    top: 0
+    padding-bottom: 1rem
+    @media (max-width: $sm)
+      width: 90%
+      position: static
+      margin: 0 auto
+  .faq
+    width: 75%
+    padding-left: 1rem
+    @media (max-width: $sm)
+      width: 90%
+      margin: 0 auto
+    h2
+      font-size: 1.75rem
+      color: $blue-color
+      font-weight: 600
+
+
+
+

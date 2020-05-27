@@ -1,0 +1,41 @@
+@import "src/assets/styles/base"
+@import "src/assets/styles/color_variables"
+
+.likeA
+  @include blue-link
+  border: none
+  background: none
+
+.title
+  color: $blue-color
+  font-weight: 500
+  font-size: 1.5rem
+  line-height: 1.5
+
+.cardBody
+  padding: 2rem
+  text-align: left
+  .liModal
+    list-style: none
+  .media
+    display: flex
+    flex-direction: row
+    .btnIconSoftDanger
+      position: relative
+      width: 2rem
+      height: 2rem
+      border-radius: 50%
+      flex-shrink: 0
+      @extend %icon-fa
+      i
+        position: absolute
+        left: 25%
+    .mediaBody
+      font-size: 1rem
+      font-weight: 400
+      line-height: 1.5
+      color: $dark-color
+
+
+
+

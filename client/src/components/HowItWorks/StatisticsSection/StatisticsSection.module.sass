@@ -1,0 +1,40 @@
+@import "src/assets/styles/base"
+
+.statisticsSection
+  @extend %section-shared
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 4rem 1rem
+  @media (min-width: $sm)
+    flex-direction: row
+    justify-content: space-between
+
+.statContainer
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 0 1rem 1rem
+  width: 100%
+  @media (min-width: $sm)
+    flex: 0 0 33.33333%
+    max-width: 33.33333%
+  p
+    text-align: center
+    margin: 1rem
+    position: relative
+    mark
+      background: transparent
+      color: black
+      font-weight: 600
+  .statParagraph
+    &::after
+      @media (min-width: $sm)
+        position: absolute
+        right: -.9375rem
+        top: 50%
+        height: 4rem
+        border-left: $border-gray
+        content: ""
+        margin-top: -2rem
+        transform: rotate(15deg)

@@ -1,0 +1,36 @@
+@import "src/assets/styles/base"
+@import "src/assets/styles/color_variables"
+
+%btn-white
+  background: $white-color
+  &:hover
+    box-shadow: 0 4px 11px rgba(255,255,255,.35)
+
+.containedButton
+  @extend %btn-shared
+  border-radius: .3125rem
+  width: max-content
+  @media (max-width: $xxs)
+    width: 90%
+  a
+    @extend %btnLabel-shared
+
+.buttonWhiteBlack
+  @extend %btn-white
+  .customLabel
+    color: $dark-color
+
+.buttonWhiteBlue
+  @extend %btn-white
+  .customLabel
+    color: $blue-color
+
+.buttonBlue
+  background: $blue-color
+  &:hover
+    box-shadow: 0 .5rem .25rem rgba(55, 125, 255, .1)
+  .customLabel
+    color: $white-color
+
+.buttonBorderRound
+  border-radius: 6.1875rem

@@ -4,6 +4,7 @@ const router = require('./router');
 const cors = require('cors');
 const controller = require('./socketInit');
 const handlerError = require('./handlerError/handler');
+//const loggerError = require('./loggerError/loggerError');
 
 const PORT = process.env.PORT || 9632;
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use('/public', express.static('public'));
 app.use(router);
 app.use(handlerError);
+//app.use(loggerError);
 
 const server = http.createServer(app);
 server.listen(PORT/*,

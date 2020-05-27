@@ -1,0 +1,32 @@
+@import "src/assets/styles/base"
+@import "src/assets/styles/color_variables"
+
+.sectionClients
+  @extend %section-shared
+  display: flex
+  flex-direction: column
+  margin-top: 4rem
+  @media (min-width: $xs)
+    flex-direction: row
+  .title
+    padding-top: 2rem
+    padding-left: 1.5rem
+    font-size: 1.75rem
+    font-weight: 300
+    line-height: 1.5
+    @media (min-width: $xs)
+      width: 40%
+  .clients
+    border-top: $border-gray
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    padding-top: 2rem
+    @media (min-width: $xs)
+      width: 60%
+    img
+      padding: 0 1rem
+      margin-bottom: 1.5rem
+
+

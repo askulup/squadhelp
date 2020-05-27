@@ -1,0 +1,49 @@
+@import 'src/assets/styles/base'
+@import 'src/assets/styles/breakpoints'
+@import 'src/assets/styles/color_variables'
+
+.cardCollapsibleWrapper
+  margin-bottom: 1rem
+  color: $dark-color
+
+.header
+  cursor: pointer
+  border: solid 1px #f2f2f2
+  border-radius: .3125rem .3125rem 0 0
+  padding: 1rem
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  user-select: none
+  overflow: visible
+  transition: all .2s ease-out
+  line-height: 1.5
+  &:hover
+    color: $blue-color
+    background: rgba(231,234,243,.4)
+  &:active
+    span
+      transform: rotateY(90deg)
+  span
+    @extend %icon-fa
+    font-weight: 200
+    transition: all .2s ease-out
+.content
+  cursor: pointer
+  border-left: solid 1px #f2f2f2
+  border-right: solid 1px #f2f2f2
+  border-bottom: solid 1px #f2f2f2
+  border-radius: 0 0 .3125rem .3125rem
+  padding: 1rem
+  @extend %p-shared
+  line-height: 1.5
+  color: $dark-color
+  a
+    @include blue-link
+  ul
+    list-style-type: disc
+    padding-left: 2.5rem
+    li
+      display: list-item
+
